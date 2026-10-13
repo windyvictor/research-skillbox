@@ -219,7 +219,7 @@ cat 段落.md | python3 scripts/check_controlled_writing.py -
   想知道被藏了什么就跑 `--mode ste` 对比。
 
 底层两个引擎（`check_ste_compliance.py` / `check_plain_language.py`）也可以单独调用，
-参数与 output-escalation 技能里的版本一致。
+参数与 explain-clearly 技能里的版本一致。
 
 ### 5.1 什么时候必须跑
 

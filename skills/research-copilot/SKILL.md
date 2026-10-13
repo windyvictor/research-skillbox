@@ -339,7 +339,7 @@ python3 scripts/check_controlled_writing.py 稿件.md --json --strict
 ## 12. 版本
 
 - v1（2026-09-22 前）：初版。数学模型/优化方向的科研协作 Skill，7 类任务 + 6 份 references。
-- **v2（2026-10-03）：并入 output-escalation 技能的 R1「受控文字」部分，并做科研适配。**
+- **v2（2026-10-03）：并入 explain-clearly（原 output-escalation）技能的 R1「受控文字」部分，并做科研适配。**
   - 新增 `references/controlled-scientific-writing.md`：把原本定性的写作建议换成可判定的阈值
     （句长 35 词 / 40 字、段落 8 句、名词串 3 词）与可执行的检查。
   - 受控语言源码：ASD-STE100 Issue 9（2025-01-15），全部词条回原书逐条核对页码。

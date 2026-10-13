@@ -1,6 +1,6 @@
 ---
 name: research-skillbox
-description: "Use when the user asks for end-to-end help with academic research or scholarly writing — choosing a research topic, searching and screening literature, reading or critiquing a batch of papers, writing a literature review, drafting or revising a paper section (Introduction, Methods, Results, Discussion, Conclusion), preparing a grant or research proposal, removing AI-sounding phrasing from a manuscript, turning reading into literature notes, writing official documents (notices, meeting minutes, work reports), or deciding how to present a result as text, a diagram, an interactive page, or a video. 中文触发：读论文、写文献综述、论文写作与修改、开题报告、基金申请书/课题申报、去 AI 味、文献笔记、公文写作、把复杂问题讲清楚。Bundles 12 standalone research Skills and routes to the right one."
+description: "Use when the user asks for end-to-end help with academic research or scholarly writing — choosing a research topic, searching and screening literature, reading or critiquing a batch of papers, writing a literature review, drafting or revising a paper section (Introduction, Methods, Results, Discussion, Conclusion), preparing a grant or research proposal, removing AI-sounding phrasing from a manuscript, turning reading into literature notes, writing official documents (notices, meeting minutes, work reports), or making a complex idea clear — understanding it first, then presenting it as text, a diagram, an interactive page, or a video. 中文触发：读论文、写文献综述、论文写作与修改、开题报告、基金申请书/课题申报、去 AI 味、文献笔记、公文写作、把复杂问题讲清楚、帮我看懂。Bundles 12 standalone research Skills and routes to the right one."
 version: 1.0.0
 author: Jin Hu
 license: MIT
@@ -48,8 +48,8 @@ Do not answer the user's request from this file alone. This file only picks the 
 | Prove a theorem, check a derivation, analyze novelty, design an algorithm experiment | `skills/research-copilot/SKILL.md` |
 | Sort out graduate study, topic choice, advisor relations, or a career decision | `skills/graduate-research-career/SKILL.md` |
 | Write a notice, summary, meeting minutes, report, or speech | `skills/ai-gongwen-writing/SKILL.md` |
-| Choose how to present a result — text, diagram, interactive page, or video | `skills/output-escalation/SKILL.md` |
-| Write an SOP, operations manual, or safety instruction; check manuscript language quality | `skills/output-escalation/SKILL.md` (controlled language), plus `skills/research-copilot/SKILL.md` (language check scripts) |
+| Explain something so the reader understands it — diagnose the blocker, then choose text, diagram, interactive page, or video | `skills/explain-clearly/SKILL.md` |
+| Write an SOP, operations manual, or safety instruction; check manuscript language quality | `skills/explain-clearly/SKILL.md` (controlled language), plus `skills/research-copilot/SKILL.md` (language check scripts) |
 | Reason through a complex decision or apply a thinking model | `skills/modern-thinking-toolkit/SKILL.md` |
 
 ## The 12 Skills
@@ -67,7 +67,7 @@ Do not answer the user's request from this file alone. This file only picks the 
 | `skills/graduate-research-career/` | Graduate study and academic career guidance distilled from 20 research guides, with 6 fillable templates |
 | `skills/ai-gongwen-writing/` | Official and workplace writing in Chinese: notices, bulletins, minutes, plans, summaries, reports, speeches, and more |
 | `skills/modern-thinking-toolkit/` | A toolkit of thinking models drawn from eight sources, for complex decisions and messy situations |
-| `skills/output-escalation/` | An output escalation ladder: controlled writing, diagrams, interactive HTML explainers, explainer video, discardable tools, plus the ASD-STE100 Issue 9 implementation |
+| `skills/explain-clearly/` | Making a reader understand: diagnose the comprehension blocker, align the facts, then pick the medium (controlled writing, diagrams, interactive HTML explainers, explainer video, discardable tools) and verify before delivery; includes the ASD-STE100 Issue 9 implementation |
 
 ## Composing Skills
 
@@ -76,13 +76,13 @@ Chain sub-Skills instead of running one pass that tries to do everything.
 - **A pile of papers to a finished review** — `critical-paper-reading` → `zettelkasten-notes` → `research-paper-writing`
 - **An idea to a grant proposal** — `research-copilot` → `grant-proposal-ai` → `academic-deai-writing`
 - **A finished book to a published article** — `socratic-reading` → `zettelkasten-notes` → `research-paper-writing` or `ai-gongwen-writing`
-- **A result to the right medium** — `research-paper-writing` → `output-escalation` (controlled language, then diagram or interactive page)
+- **A result to the right medium** — `research-paper-writing` → `explain-clearly` (controlled language, then diagram or interactive page)
 
 ## Language note
 
 The 12 sub-Skills are written primarily in **Chinese**, and several are specific to Chinese
 academic and official-document conventions. A sub-Skill's own file governs the language of its
-output. `research-paper-writing`, `research-copilot`, and `output-escalation` include
+output. `research-paper-writing`, `research-copilot`, and `explain-clearly` include
 English-facing rules as well.
 
 ## License

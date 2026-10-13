@@ -76,7 +76,7 @@ python3 scripts/check_controlled_writing.py 稿件.md --json --strict  # hard �
 | 来源 | 作者 / 出处 | 借鉴内容 |
 |---|---|---|
 | *ASD-STE100 Simplified Technical English*, Issue 9（2025-01-15） | ASD（欧洲航空航天与防务工业协会），© ASD 2025；官方免费下载：<https://www.asd-ste100.org> | **语言层机械底线的受控语言底座**（v2）：53 条规则的可机械判定子集、未核准词机制；已做**科研适配**——新增学术规则豁免层 + 138 条领域术语表，避免把 hedging 与数学用语误判为违规 |
-| [output-escalation](../output-escalation/README.md)（本仓库自研技能） | 本仓库作者 | v2 并入其 R1「受控文字」的阈值体系与检查脚本，并向科研场景适配（统一入口脚本、中英自动分派、去 AI 味套话计数） |
+| [explain-clearly](../explain-clearly/README.md)（本仓库自研技能） | 本仓库作者 | v2 并入其 R1「受控文字」的阈值体系与检查脚本，并向科研场景适配（统一入口脚本、中英自动分派、去 AI 味套话计数） |
 | 数学证明规范、审阅清单、创新性分析框架、选题方法等科研工作流 | **原创** | 7 类科研任务的完整工作流、证据层级、禁止事项与自检清单 |
 
 > 如后续引入外部方法论，请在本表增补署名。
@@ -91,7 +91,7 @@ python3 scripts/check_controlled_writing.py 稿件.md --json --strict  # hard �
 ## 版本
 
 - v1（2026-09-22 前）：初版。数学模型/优化方向的科研协作 Skill，7 类任务 + 6 份 references。
-- **v2（2026-10-03）**：并入 output-escalation 技能的 R1「受控文字」部分，并做科研适配。
+- **v2（2026-10-03）**：并入 explain-clearly（原 output-escalation）技能的 R1「受控文字」部分，并做科研适配。
   - 新增 `references/controlled-scientific-writing.md`：把原本定性的写作建议换成可判定的阈值
     （句长 35 词 / 40 字、段落 8 句、名词串 3 词）与可执行的检查。
   - 受控语言源码：ASD-STE100 Issue 9（2025-01-15），全部词条回原书逐条核对页码。

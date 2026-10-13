@@ -87,7 +87,7 @@ These Skills share three characteristics:
 |---|---|---|
 | [ai-gongwen-writing](./skills/ai-gongwen-writing/README.md) | A **Chinese official-document and workplace writing** library | 20+ official document types (notices, bulletins, meeting minutes, requests for instructions, summaries, research reports, leadership speeches…) and workplace genres (weekly reports, retrospectives, applications, public remarks, annual reviews); each with a writing formula + step-by-step prompts + final-draft self-check |
 | [modern-thinking-toolkit](./skills/modern-thinking-toolkit/README.md) | A **modern thinking toolkit** (~320 models) | Decision algorithms, game theory, probability and Bayes, critical thinking, systems thinking, role-based mindsets, cognitive growth; automatically picks 1 primary and up to 3 supporting/counter tools and outputs conclusions, mechanisms, trade-offs, and actions |
-| [output-escalation](./skills/output-escalation/README.md) | An **output escalation ladder** — pick the medium that costs the reader the least effort | Five rungs (controlled writing → diagrams → interactive HTML explainer → explainer video → discardable tool) + escalation/de-escalation criteria; includes a complete implementation of ASD-STE100 Simplified Technical English Issue 9 (53 rules + controlled dictionary + check scripts) |
+| [explain-clearly](./skills/explain-clearly/README.md) | **Make a reader understand** — diagnose the blocker, then pick the medium that costs the reader the least effort | Five rungs (controlled writing → diagrams → interactive HTML explainer → explainer video → discardable tool) + escalation/de-escalation criteria; a comprehension-first layer (preserve facts, boundaries, and source; report "not yet verified" honestly); and a complete implementation of ASD-STE100 Simplified Technical English Issue 9 (53 rules + controlled dictionary + check scripts) |
 
 ---
 
@@ -106,8 +106,8 @@ These Skills share three characteristics:
 | Mathematical proofs, derivations, novelty analysis, algorithm experiments | `research-copilot` |
 | I'm a grad student feeling lost: topics, advisor relations, whether to do a PhD | `graduate-research-career` |
 | Write a notice, summary, meeting minutes, or work report | `ai-gongwen-writing` |
-| Explain something complex clearly: diagrams, an interactive webpage, an explainer video | `output-escalation` |
-| Write an operations manual / SOP / safety instructions, or check manuscript language quality | `output-escalation` (controlled language) + `research-copilot` (language check scripts) |
+| Understand something myself, or explain it clearly to others: diagrams, an interactive webpage, an explainer video | `explain-clearly` |
+| Write an operations manual / SOP / safety instructions, or check manuscript language quality | `explain-clearly` (controlled language) + `research-copilot` (language check scripts) |
 | Make a complex decision, analyze a messy situation, find a mental model | `modern-thinking-toolkit` |
 
 ---
@@ -184,7 +184,7 @@ a literature review").
     ├── graduate-research-career/
     ├── ai-gongwen-writing/
     ├── modern-thinking-toolkit/
-    └── output-escalation/
+    └── explain-clearly/
 ```
 
 ---
@@ -222,7 +222,7 @@ efficiency.
 
 | Category | Description | Examples |
 |---|---|---|
-| **① Distilled / rewritten** (the bulk) | Restatement and structural reorganization of key methods, not verbatim copying | The flows, rules, and checklists of each Skill; the functional distillation of ASD-STE100 controlled English in `output-escalation` / `research-copilot` |
+| **① Distilled / rewritten** (the bulk) | Restatement and structural reorganization of key methods, not verbatim copying | The flows, rules, and checklists of each Skill; the functional distillation of ASD-STE100 controlled English in `explain-clearly` / `research-copilot` |
 | **② Verbatim quotations** (all sources cited) | Original sentences, prompt templates, or phrase banks kept for authenticity or functionality | The "金句 (Lecture N)" quotes in `modern-thinking-toolkit`; the verbatim prompt sets in `prompt-library/`; the academic phrase bank in `research-paper-writing` |
 | **③ Third-party material under known copyright constraints** | Material whose owners explicitly restrict redistribution; such files carry prominent notices | *Academic Phrasebank* cited in `research-paper-writing` (University of Manchester — personal use only, electronic redistribution prohibited) |
 

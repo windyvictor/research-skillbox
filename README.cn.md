@@ -78,7 +78,7 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 |---|---|---|
 | [ai-gongwen-writing](./skills/ai-gongwen-writing/README.md) | **公文与职场写作**技能库 | 20+ 公文文种（通知/通报/会议纪要/请示/总结/调研报告/领导讲话…）与职场文体（周报/复盘/申请/公开发言/年终总结），各含写作公式 + 分步提示词 + 成稿自检 |
 | [modern-thinking-toolkit](./skills/modern-thinking-toolkit/README.md) | **现代思维工具箱**（约 320 个模型） | 决策算法、博弈论、概率与贝叶斯、批判性思维、系统思维、角色思维、认知成长等，自动选 1 主 + ≤3 辅工具输出结论、机制、权衡与行动 |
-| [output-escalation](./skills/output-escalation/README.md) | **输出升维阶梯**——为消息选最省读者力气的介质 | 五级阶梯（受控文字 → 图表 → 交互网页 → 讲解视频 → 可丢弃小工具）+ 升维/降级判据；内置 ASD-STE100 受控英语 Issue 9 完整实现（53 条规则 + 受控词典 + 检查脚本） |
+| [explain-clearly](./skills/explain-clearly/README.md) | **讲清楚 / 帮我看懂**——先诊断读者卡在哪里，再选最省力气的介质 | 五级阶梯（受控文字 → 图表 → 交互网页 → 讲解视频 → 可丢弃小工具）+ 升维/降级判据；理解诊断层（保住事实、证据边界与来源，如实区分"已完成/未验证"）；内置 ASD-STE100 受控英语 Issue 9 完整实现（53 条规则 + 受控词典 + 检查脚本） |
 
 ---
 
@@ -97,8 +97,8 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 | 数学证明、推导、创新点分析、算法实验 | `research-copilot` |
 | 研究生阶段迷茫：选题、导师关系、要不要读博 | `graduate-research-career` |
 | 写通知、总结、会议纪要、述职报告 | `ai-gongwen-writing` |
-| 把复杂的东西讲清楚：画图、做交互网页、做讲解视频 | `output-escalation` |
-| 写操作手册 / SOP / 安全规程，或检查稿件语言质量 | `output-escalation`（受控语言）+ `research-copilot`（语言体检脚本） |
+| 自己看懂一份材料，或把复杂的东西讲给别人：画图、做交互网页、做讲解视频 | `explain-clearly` |
+| 写操作手册 / SOP / 安全规程，或检查稿件语言质量 | `explain-clearly`（受控语言）+ `research-copilot`（语言体检脚本） |
 | 做复杂决策、分析一个乱局、找思维模型 | `modern-thinking-toolkit` |
 
 ---
@@ -172,7 +172,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
     ├── graduate-research-career/
     ├── ai-gongwen-writing/
     ├── modern-thinking-toolkit/
-    └── output-escalation/
+    └── explain-clearly/
 ```
 
 ---
@@ -208,7 +208,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
 
 | 类型 | 说明 | 举例 |
 |---|---|---|
-| **① 提炼改写**（主体） | 方法要点的重新表述与结构重组，非原文照搬 | 各 Skill 的流程、规则、checklist；`output-escalation` / `research-copilot` 对 ASD-STE100 受控语言的功能性提炼 |
+| **① 提炼改写**（主体） | 方法要点的重新表述与结构重组，非原文照搬 | 各 Skill 的流程、规则、checklist；`explain-clearly` / `research-copilot` 对 ASD-STE100 受控语言的功能性提炼 |
 | **② 原文引用**（均已标注来源） | 为保留原味或功能而保留的原句、提示词模板、句式库 | `modern-thinking-toolkit` 的「金句（第 N 讲）」、`prompt-library/` 的提示词原文集、`research-paper-writing` 的学术句式 |
 | **③ 已知受版权约束的第三方素材** | 来源方明确限制再分发的素材，仓库已作显著提示 | `research-paper-writing` 引用的 *Academic Phrasebank*（曼彻斯特大学，仅授权个人使用、禁止电子再分发） |
 
