@@ -70,7 +70,7 @@ These Skills share three characteristics:
 
 | Skill | One-line positioning | Core content |
 |---|---|---|
-| [critical-paper-reading](./skills/critical-paper-reading/README.md) | **Critical close reading** of one or many papers | Keshav's three-pass method + structured element extraction + a critical-thinking engine (question checklists, argument evaluation, research-gap identification); outputs a structured reading report |
+| [paper-deep-reading](./skills/paper-deep-reading/README.md) | **Deep close reading** of one or many papers | Keshav's three-pass method + structured element extraction + a critical-thinking engine (question checklists, argument evaluation, research-gap identification) + an AI-mentor reading protocol (contextual positioning, cognitive ladder L1–L4, explainer media ladder, Socratic dialectics, verifiable citations); outputs a structured reading report |
 | [socratic-reading](./skills/socratic-reading/README.md) | Read a book using the **Socratic questioning method** | Adler's four levels of reading (elementary/inspectional/analytical/syntopical) + a four-question chain + book selection and speed-reading output methods |
 | [zettelkasten-notes](./skills/zettelkasten-notes/README.md) | The **Zettelkasten note-taking method** | Fleeting → literature → permanent notes + linking + index + review; solves "I take lots of notes but never write anything" |
 
@@ -97,7 +97,7 @@ These Skills share three characteristics:
 |---|---|
 | Write a paper or thesis, or I'm stuck on a section | `research-paper-writing` |
 | Write a literature review or the review section of a proposal | `research-paper-writing` |
-| Read through a batch of papers and build a literature matrix | `critical-paper-reading` + `research-paper-writing` |
+| Read through a batch of papers and build a literature matrix | `paper-deep-reading` + `research-paper-writing` |
 | A reviewer says my writing sounds AI-generated; my AIGC score is too high | `academic-deai-writing` |
 | I just want a ready-made set of paper-writing prompts | [`prompt-library/`](./prompt-library/README.md) (not a Skill — reference material) |
 | Write a grant or research proposal | `grant-proposal-ai` |
@@ -133,7 +133,7 @@ git clone https://github.com/<your-username>/<repo-name>.git
 
 # Copy the Skills you need into your user-level skills directory
 cp -r <repo-name>/skills/research-paper-writing ~/.workbuddy/skills/
-cp -r <repo-name>/skills/critical-paper-reading  ~/.workbuddy/skills/
+cp -r <repo-name>/skills/paper-deep-reading  ~/.workbuddy/skills/
 # …copy as needed
 ```
 
@@ -177,7 +177,7 @@ a literature review").
     ├── academic-deai-writing/
     ├── grant-proposal-ai/
     ├── ai-research-methodology/
-    ├── critical-paper-reading/
+    ├── paper-deep-reading/
     ├── socratic-reading/
     ├── zettelkasten-notes/
     ├── research-copilot/
@@ -194,7 +194,7 @@ a literature review").
 Each works well alone, but chaining them is far more powerful. A few typical chains:
 
 - **From a pile of papers to a finished review**
-  `critical-paper-reading` (read each paper, extract elements, raise critiques)
+  `paper-deep-reading` (read each paper, extract elements, raise critiques)
   → `zettelkasten-notes` (distill into literature cards and build links)
   → `research-paper-writing` (structure, write, and self-audit the review)
 

@@ -61,7 +61,7 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 
 | Skill | 一句话定位 | 核心内容 |
 |---|---|---|
-| [critical-paper-reading](./skills/critical-paper-reading/README.md) | **批判性精读**单篇 / 多篇论文 | Keshav 三遍法 + 结构化要素提取 + 批判性思维引擎（质疑清单、论证评估、研究空白识别），输出结构化阅读报告 |
+| [paper-deep-reading](./skills/paper-deep-reading/README.md) | **深度精读**单篇 / 多篇论文 | Keshav 三遍法 + 结构化要素提取 + 批判性思维引擎（质疑清单、论证评估、研究空白识别）+ AI 导师式精读协议（学术时空坐标、认知阶梯 L1–L4、讲解载体阶梯、苏格拉底式辩证、全源可核查引证），输出结构化阅读报告 |
 | [socratic-reading](./skills/socratic-reading/README.md) | 用**苏格拉底提问法**读一本书 | 艾德勒四层次阅读（基础/检视/分析/主题）+ 四个基本问题追问链 + 选书与速读产出法 |
 | [zettelkasten-notes](./skills/zettelkasten-notes/README.md) | **卡片盒笔记法**（Zettelkasten） | 闪念 → 文献 → 永久笔记 + 连接 + 索引 + 回顾，解决「记了很多笔记却写不出东西」 |
 
@@ -88,7 +88,7 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 |---|---|
 | 写一篇论文 / 学位论文，或某个章节卡住了 | `research-paper-writing` |
 | 写文献综述、开题报告的综述部分 | `research-paper-writing` |
-| 一口气读懂一批论文、做文献矩阵 | `critical-paper-reading` + `research-paper-writing` |
+| 一口气读懂一批论文、做文献矩阵 | `paper-deep-reading` + `research-paper-writing` |
 | 审稿人说我写得太像 AI、AIGC 率过高 | `academic-deai-writing` |
 | 想直接抄一套好用的论文提示词 | [`prompt-library/`](./prompt-library/README.md)（非技能，属参考资料） |
 | 要写基金 / 课题申报书 | `grant-proposal-ai` |
@@ -124,7 +124,7 @@ git clone https://github.com/<你的用户名>/<仓库名>.git
 
 # 把需要的 skill 目录复制到用户级 skills 目录
 cp -r <仓库名>/skills/research-paper-writing ~/.workbuddy/skills/
-cp -r <仓库名>/skills/critical-paper-reading  ~/.workbuddy/skills/
+cp -r <仓库名>/skills/paper-deep-reading  ~/.workbuddy/skills/
 # ……按需复制
 ```
 
@@ -165,7 +165,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
     ├── academic-deai-writing/
     ├── grant-proposal-ai/
     ├── ai-research-methodology/
-    ├── critical-paper-reading/
+    ├── paper-deep-reading/
     ├── socratic-reading/
     ├── zettelkasten-notes/
     ├── research-copilot/
@@ -182,7 +182,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
 单独用已经能打，串起来威力更大。几个典型链路：
 
 - **从一堆文献到一篇综述**
-  `critical-paper-reading`（逐篇精读、产出要素与质疑）
+  `paper-deep-reading`（逐篇精读、产出要素与质疑）
   → `zettelkasten-notes`（沉淀为文献卡片、建立连接）
   → `research-paper-writing`（组织综述结构、撰写与自审）
 

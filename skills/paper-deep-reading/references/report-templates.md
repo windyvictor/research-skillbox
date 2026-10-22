@@ -1,6 +1,6 @@
 # 批判性文献阅读报告模板
 
-本文件是 critical-paper-reading 技能的报告输出规范。默认输出完整 Markdown 文档；检测到 Word/PDF 导出关键词时按文末规范追加生成对应格式。
+本文件是 paper-deep-reading 技能的报告输出规范。默认输出完整 Markdown 文档；检测到 Word/PDF 导出关键词时按文末规范追加生成对应格式。
 
 ## 一、报告结构（Markdown 模板）
 

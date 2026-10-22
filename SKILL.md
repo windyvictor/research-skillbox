@@ -40,7 +40,7 @@ Do not answer the user's request from this file alone. This file only picks the 
 |---|---|
 | Write or revise a paper, thesis, abstract, or one section of it | `skills/research-paper-writing/SKILL.md` |
 | Write a literature review, or the review section of a proposal | `skills/research-paper-writing/SKILL.md` |
-| Read a batch of papers and build a literature matrix | `skills/critical-paper-reading/SKILL.md`, then `skills/research-paper-writing/SKILL.md` |
+| Read a batch of papers and build a literature matrix | `skills/paper-deep-reading/SKILL.md`, then `skills/research-paper-writing/SKILL.md` |
 | Strip AI traces / lower an AIGC score on a manuscript | `skills/academic-deai-writing/SKILL.md` |
 | Write a grant or research proposal, section by section | `skills/grant-proposal-ai/SKILL.md` |
 | Set up AI tools and workflows for research efficiency | `skills/ai-research-methodology/SKILL.md` |
@@ -60,7 +60,7 @@ Do not answer the user's request from this file alone. This file only picks the 
 | `skills/academic-deai-writing/` | Removing AI writing traces from papers and proposals: diagnosis, rewriting, boilerplate cleanup, word-budget reallocation, section-specific treatment |
 | `skills/grant-proposal-ai/` | Grant and research proposal writing: every section, plus structured prompt templates |
 | `skills/ai-research-methodology/` | Methodology and tool selection for doing research with AI: literature search, topic trends, experiment design, statistical modeling, submission and revision |
-| `skills/critical-paper-reading/` | Critical reading of papers: fast triage, deep critique, multi-paper comparison, quality assessment |
+| `skills/paper-deep-reading/` | Critical reading of papers: fast triage, deep critique, multi-paper comparison, quality assessment |
 | `skills/socratic-reading/` | Socratic method for reading books: four levels of reading, four core questions, reading plans and notes |
 | `skills/zettelkasten-notes/` | Zettelkasten note-taking: fleeting notes, literature notes, permanent notes, linking and review |
 | `skills/research-copilot/` | Rigorous research collaboration: mathematical proofs, derivations, review, literature surveys, novelty analysis, method design, numerical experiments, LaTeX, plus a controlled-language layer |
@@ -73,7 +73,7 @@ Do not answer the user's request from this file alone. This file only picks the 
 
 Chain sub-Skills instead of running one pass that tries to do everything.
 
-- **A pile of papers to a finished review** — `critical-paper-reading` → `zettelkasten-notes` → `research-paper-writing`
+- **A pile of papers to a finished review** — `paper-deep-reading` → `zettelkasten-notes` → `research-paper-writing`
 - **An idea to a grant proposal** — `research-copilot` → `grant-proposal-ai` → `academic-deai-writing`
 - **A finished book to a published article** — `socratic-reading` → `zettelkasten-notes` → `research-paper-writing` or `ai-gongwen-writing`
 - **A result to the right medium** — `research-paper-writing` → `explain-clearly` (controlled language, then diagram or interactive page)
