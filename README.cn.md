@@ -52,7 +52,7 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 
 | Skill | 一句话定位 | 核心内容 |
 |---|---|---|
-| [research-paper-writing](./skills/research-paper-writing/README.md) | 论文写作与文献综述**全流程**主力技能 | 检索筛选 → 批判精读 → 综述撰写 → 选题 Idea → 逐节写作（引言/摘要/方法/实验/相关工作/结论）→ 投稿自审 → 答辩，附真实范例库与稿件自检脚本 |
+| [writing-research-papers](./skills/writing-research-papers/README.md) | 论文写作与文献综述**全流程**主力技能 | 检索筛选 → 批判精读 → 综述撰写 → 选题 Idea → 逐节写作（引言/摘要/方法/实验/相关工作/结论）→ 投稿自审 → 答辩，附真实范例库与稿件自检脚本 |
 | [academic-deai-writing](./skills/academic-deai-writing/README.md) | 去除论文与申报书的 **AI 味 / AIGC 痕迹** | 根因诊断、通用改写、套话清理、篇幅重分配，以及 Introduction/Results/Discussion/创新点分章节专项处理与英文改写 |
 | [grant-proposal-ai](./skills/grant-proposal-ai/README.md) | **课题 / 基金申报书**写作指南 | 申报书各部分（立项依据、研究内容、技术路线、创新点、可行性、预算）写作要领 + 40 个结构化提示词模板 |
 | [ai-research-methodology](./skills/ai-research-methodology/README.md) | 用 AI 做科研的 **方法论与工具选型** | 文献检索、选题趋势、数据处理、实验设计与创新点挖掘、统计建模、图表生成、投稿返修；分理工科 / 文科两套黄金提示词 |
@@ -78,7 +78,7 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 |---|---|---|
 | [ai-gongwen-writing](./skills/ai-gongwen-writing/README.md) | **公文与职场写作**技能库 | 20+ 公文文种（通知/通报/会议纪要/请示/总结/调研报告/领导讲话…）与职场文体（周报/复盘/申请/公开发言/年终总结），各含写作公式 + 分步提示词 + 成稿自检 |
 | [modern-thinking-toolkit](./skills/modern-thinking-toolkit/README.md) | **现代思维工具箱**（约 320 个模型） | 决策算法、博弈论、概率与贝叶斯、批判性思维、系统思维、角色思维、认知成长等，自动选 1 主 + ≤3 辅工具输出结论、机制、权衡与行动 |
-| [explain-clearly](./skills/explain-clearly/README.md) | **讲清楚 / 帮我看懂**——先诊断读者卡在哪里，再选最省力气的介质 | 五级阶梯（受控文字 → 图表 → 交互网页 → 讲解视频 → 可丢弃小工具）+ 升维/降级判据；理解诊断层（保住事实、证据边界与来源，如实区分"已完成/未验证"）；内置 ASD-STE100 受控英语 Issue 9 完整实现（53 条规则 + 受控词典 + 检查脚本） |
+| [clear-explainer](./skills/clear-explainer/README.md) | **讲清楚 / 帮我看懂**——先诊断读者卡在哪里，再选最省力气的介质 | 五级阶梯（受控文字 → 图表 → 交互网页 → 讲解视频 → 可丢弃小工具）+ 升维/降级判据；理解诊断层（保住事实、证据边界与来源，如实区分"已完成/未验证"）；内置 ASD-STE100 受控英语 Issue 9 完整实现（53 条规则 + 受控词典 + 检查脚本） |
 
 ---
 
@@ -86,9 +86,9 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 
 | 我想…… | 用哪个 |
 |---|---|
-| 写一篇论文 / 学位论文，或某个章节卡住了 | `research-paper-writing` |
-| 写文献综述、开题报告的综述部分 | `research-paper-writing` |
-| 一口气读懂一批论文、做文献矩阵 | `paper-deep-reading` + `research-paper-writing` |
+| 写一篇论文 / 学位论文，或某个章节卡住了 | `writing-research-papers` |
+| 写文献综述、开题报告的综述部分 | `writing-research-papers` |
+| 一口气读懂一批论文、做文献矩阵 | `paper-deep-reading` + `writing-research-papers` |
 | 审稿人说我写得太像 AI、AIGC 率过高 | `academic-deai-writing` |
 | 想直接抄一套好用的论文提示词 | [`prompt-library/`](./prompt-library/README.md)（非技能，属参考资料） |
 | 要写基金 / 课题申报书 | `grant-proposal-ai` |
@@ -97,8 +97,8 @@ Agent 路由到 `skills/` 下对应的子技能。因此本仓库既可整包使
 | 数学证明、推导、创新点分析、算法实验 | `research-copilot` |
 | 研究生阶段迷茫：选题、导师关系、要不要读博 | `graduate-research-career` |
 | 写通知、总结、会议纪要、述职报告 | `ai-gongwen-writing` |
-| 自己看懂一份材料，或把复杂的东西讲给别人：画图、做交互网页、做讲解视频 | `explain-clearly` |
-| 写操作手册 / SOP / 安全规程，或检查稿件语言质量 | `explain-clearly`（受控语言）+ `research-copilot`（语言体检脚本） |
+| 自己看懂一份材料，或把复杂的东西讲给别人：画图、做交互网页、做讲解视频 | `clear-explainer` |
+| 写操作手册 / SOP / 安全规程，或检查稿件语言质量 | `clear-explainer`（受控语言）+ `research-copilot`（语言体检脚本） |
 | 做复杂决策、分析一个乱局、找思维模型 | `modern-thinking-toolkit` |
 
 ---
@@ -123,7 +123,7 @@ cp -r <仓库名> ~/.workbuddy/skills/research-skillbox
 git clone https://github.com/<你的用户名>/<仓库名>.git
 
 # 把需要的 skill 目录复制到用户级 skills 目录
-cp -r <仓库名>/skills/research-paper-writing ~/.workbuddy/skills/
+cp -r <仓库名>/skills/writing-research-papers ~/.workbuddy/skills/
 cp -r <仓库名>/skills/paper-deep-reading  ~/.workbuddy/skills/
 # ……按需复制
 ```
@@ -132,11 +132,11 @@ cp -r <仓库名>/skills/paper-deep-reading  ~/.workbuddy/skills/
 
 ```bash
 mkdir -p <你的项目>/.workbuddy/skills
-cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills/
+cp -r <仓库名>/skills/writing-research-papers <你的项目>/.workbuddy/skills/
 ```
 
 安装后重启 Agent 或重新载入技能，即可在对话中自动触发，或显式点名调用
-（如「用 research-paper-writing 帮我写文献综述」）。
+（如「用 writing-research-papers 帮我写文献综述」）。
 
 > 目录规范：`SKILL.md` 为入口，`references/` 为知识分片，`assets/` 为模板，`scripts/` 为脚本。
 > **整包安装时，子技能统一放在 `skills/` 子目录**：多数平台在目录含 `SKILL.md` 时只下探
@@ -157,7 +157,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
 │   ├── README.md                 #   索引、来源声明与使用原则
 │   └── *.md                      #   40 套提示词方案 + 30 条英文写作指令（原文）
 └── skills/                       # 以下每个目录 = 一个独立 Skill
-    ├── research-paper-writing/
+    ├── writing-research-papers/
     │   ├── SKILL.md              #   技能入口：触发条件 + 工作流
     │   ├── README.md             #   技能详情页
     │   ├── references/           #   知识分片（分章节指南、清单、范例）
@@ -172,7 +172,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
     ├── graduate-research-career/
     ├── ai-gongwen-writing/
     ├── modern-thinking-toolkit/
-    └── explain-clearly/
+    └── clear-explainer/
 ```
 
 ---
@@ -184,7 +184,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
 - **从一堆文献到一篇综述**
   `paper-deep-reading`（逐篇精读、产出要素与质疑）
   → `zettelkasten-notes`（沉淀为文献卡片、建立连接）
-  → `research-paper-writing`（组织综述结构、撰写与自审）
+  → `writing-research-papers`（组织综述结构、撰写与自审）
 
 - **从想法到基金申报书**
   `research-copilot`（论证科学问题与方法可行性）
@@ -194,7 +194,7 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
 - **读完一本书到能写文章**
   `socratic-reading`（四层次阅读、四个基本问题）
   → `zettelkasten-notes`（永久笔记）
-  → `research-paper-writing` / `ai-gongwen-writing`（成文输出）
+  → `writing-research-papers` / `ai-gongwen-writing`（成文输出）
 
 ---
 
@@ -208,9 +208,9 @@ cp -r <仓库名>/skills/research-paper-writing <你的项目>/.workbuddy/skills
 
 | 类型 | 说明 | 举例 |
 |---|---|---|
-| **① 提炼改写**（主体） | 方法要点的重新表述与结构重组，非原文照搬 | 各 Skill 的流程、规则、checklist；`explain-clearly` / `research-copilot` 对 ASD-STE100 受控语言的功能性提炼 |
-| **② 原文引用**（均已标注来源） | 为保留原味或功能而保留的原句、提示词模板、句式库 | `modern-thinking-toolkit` 的「金句（第 N 讲）」、`prompt-library/` 的提示词原文集、`research-paper-writing` 的学术句式 |
-| **③ 已知受版权约束的第三方素材** | 来源方明确限制再分发的素材，仓库已作显著提示 | `research-paper-writing` 引用的 *Academic Phrasebank*（曼彻斯特大学，仅授权个人使用、禁止电子再分发） |
+| **① 提炼改写**（主体） | 方法要点的重新表述与结构重组，非原文照搬 | 各 Skill 的流程、规则、checklist；`clear-explainer` / `research-copilot` 对 ASD-STE100 受控语言的功能性提炼 |
+| **② 原文引用**（均已标注来源） | 为保留原味或功能而保留的原句、提示词模板、句式库 | `modern-thinking-toolkit` 的「金句（第 N 讲）」、`prompt-library/` 的提示词原文集、`writing-research-papers` 的学术句式 |
+| **③ 已知受版权约束的第三方素材** | 来源方明确限制再分发的素材，仓库已作显著提示 | `writing-research-papers` 引用的 *Academic Phrasebank*（曼彻斯特大学，仅授权个人使用、禁止电子再分发） |
 
 ### 引用规范
 

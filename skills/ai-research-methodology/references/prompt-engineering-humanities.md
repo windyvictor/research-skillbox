@@ -108,7 +108,7 @@
 ### 2.7 写作与润色类需求——转配套技能
 
 论文框架生成、逐节撰写、学术润色与降重，已由配套技能系统覆盖，本手册不再重复模板：
-写作策略与分节指南用 `research-paper-writing`，去 AI 味与降 AIGC 用 `academic-deai-writing`。
+写作策略与分节指南用 `writing-research-papers`，去 AI 味与降 AIGC 用 `academic-deai-writing`。
 
 **降重 ≠ 降 AIGC（先分清再动手）**：查重（重复率）针对的是与他人文字的重合，降 AIGC 针对的是文本像机器写的——两套检测、两套对策。用户说"降重"时要确认他到底卡在哪一项，不要混用同一套提示词。
 

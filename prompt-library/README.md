@@ -13,7 +13,7 @@
 降 AIGC、查重，再到答辩 PPT 与英文投稿，不限于「写正文」这一环。
 
 > 方法论层面的内容不在本目录。写论文、文献综述、去 AI 味、文献精读分别由
-> `skills/research-paper-writing/`、`skills/academic-deai-writing/`、
+> `skills/writing-research-papers/`、`skills/academic-deai-writing/`、
 > `skills/paper-deep-reading/` 承担，那些是技能，会主动介入任务。
 
 ## 资料来源与权利声明（重要）

@@ -21,7 +21,7 @@ agent_created: true
 | 具体环节怎么用 ChatGPT（初稿、润色、审稿反驳、实验核查） | `references/methodology-guides.md` 第 3、4 章（含英文 prompt 原文） |
 | **理工科**：文献检索、数据预处理与特征工程、实验设计、创新建模、AI Code 构建/改进 Baseline、消融实验、论文图表 | `references/prompt-engineering-stem.md`（8 环节 + 7 个代码提示词，模板原文） |
 | **文科**：文献检索、量表检验与 CMB、因果识别（DID/IV/RDD/PSM）、中介调节、质性编码、文献计量（CiteSpace/VOSviewer）、PRISMA 系统综述、稳健性检验 | `references/prompt-engineering-humanities.md`（8 环节 + 7 个实战模板，模板原文） |
-| 论文写作层的方法论与去 AI 味（润色、降 AIGC、查重、可读性自测） | 转入配套技能 `academic-deai-writing`（去 AI 味）与 `research-paper-writing`（可读性自测、修改 Checklist） |
+| 论文写作层的方法论与去 AI 味（润色、降 AIGC、查重、可读性自测） | 转入配套技能 `academic-deai-writing`（去 AI 味）与 `writing-research-papers`（可读性自测、修改 Checklist） |
 | 需要可直接复制粘贴的网络流传提示词原文（40 套方案 + 30 条英文指令） | 仓库 `prompt-library/`（资料，非技能） |
 | 课题申报书写作 | 转入配套技能 `grant-proposal-ai` |
 

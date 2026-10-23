@@ -1,4 +1,4 @@
-# research-paper-writing
+# writing-research-papers
 
 > 科研论文写作与文献综述**全流程**技能 —— 从检索一批文献，到投出最终稿。
 
@@ -25,7 +25,7 @@ Abstract / Method / Experiments / Related Work / Conclusion；检查段落衔接
 ## 内容结构
 
 ```text
-research-paper-writing/
+writing-research-papers/
 ├── SKILL.md                          # 总工作流与路由
 ├── references/
 │   ├── literature-review-workflow.md # 文献综述六步法工作流

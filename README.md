@@ -61,7 +61,7 @@ These Skills share three characteristics:
 
 | Skill | One-line positioning | Core content |
 |---|---|---|
-| [research-paper-writing](./skills/research-paper-writing/README.md) | The **end-to-end** workhorse for paper writing and literature reviews | Search & screening → critical reading → review drafting → topic & idea → section-by-section writing (Intro/Abstract/Method/Experiments/Related Work/Conclusion) → pre-submission self-audit → defense; includes a real-example library and a manuscript check script |
+| [writing-research-papers](./skills/writing-research-papers/README.md) | The **end-to-end** workhorse for paper writing and literature reviews | Search & screening → critical reading → review drafting → topic & idea → section-by-section writing (Intro/Abstract/Method/Experiments/Related Work/Conclusion) → pre-submission self-audit → defense; includes a real-example library and a manuscript check script |
 | [academic-deai-writing](./skills/academic-deai-writing/README.md) | Remove **AI traces / AIGC markers** from papers and grant proposals | Root-cause diagnosis, general rewriting, boilerplate cleanup, re-allocating word budget, plus section-specific treatment (Introduction/Results/Discussion/novelty) and English-specific rewriting |
 | [grant-proposal-ai](./skills/grant-proposal-ai/README.md) | A writing guide for **grant / research proposals** | Writing techniques for every section (rationale, research content, technical route, novelty, feasibility, budget) + 40 structured prompt templates |
 | [ai-research-methodology](./skills/ai-research-methodology/README.md) | **Methodology and tool selection** for doing research with AI | Literature search, topic trends, data processing, experiment design and novelty mining, statistical modeling, figure generation, submission and revision; separate golden prompt sets for STEM and humanities |
@@ -87,7 +87,7 @@ These Skills share three characteristics:
 |---|---|---|
 | [ai-gongwen-writing](./skills/ai-gongwen-writing/README.md) | A **Chinese official-document and workplace writing** library | 20+ official document types (notices, bulletins, meeting minutes, requests for instructions, summaries, research reports, leadership speeches…) and workplace genres (weekly reports, retrospectives, applications, public remarks, annual reviews); each with a writing formula + step-by-step prompts + final-draft self-check |
 | [modern-thinking-toolkit](./skills/modern-thinking-toolkit/README.md) | A **modern thinking toolkit** (~320 models) | Decision algorithms, game theory, probability and Bayes, critical thinking, systems thinking, role-based mindsets, cognitive growth; automatically picks 1 primary and up to 3 supporting/counter tools and outputs conclusions, mechanisms, trade-offs, and actions |
-| [explain-clearly](./skills/explain-clearly/README.md) | **Make a reader understand** — diagnose the blocker, then pick the medium that costs the reader the least effort | Five rungs (controlled writing → diagrams → interactive HTML explainer → explainer video → discardable tool) + escalation/de-escalation criteria; a comprehension-first layer (preserve facts, boundaries, and source; report "not yet verified" honestly); and a complete implementation of ASD-STE100 Simplified Technical English Issue 9 (53 rules + controlled dictionary + check scripts) |
+| [clear-explainer](./skills/clear-explainer/README.md) | **Make a reader understand** — diagnose the blocker, then pick the medium that costs the reader the least effort | Five rungs (controlled writing → diagrams → interactive HTML explainer → explainer video → discardable tool) + escalation/de-escalation criteria; a comprehension-first layer (preserve facts, boundaries, and source; report "not yet verified" honestly); and a complete implementation of ASD-STE100 Simplified Technical English Issue 9 (53 rules + controlled dictionary + check scripts) |
 
 ---
 
@@ -95,9 +95,9 @@ These Skills share three characteristics:
 
 | What I want to do… | Which Skill |
 |---|---|
-| Write a paper or thesis, or I'm stuck on a section | `research-paper-writing` |
-| Write a literature review or the review section of a proposal | `research-paper-writing` |
-| Read through a batch of papers and build a literature matrix | `paper-deep-reading` + `research-paper-writing` |
+| Write a paper or thesis, or I'm stuck on a section | `writing-research-papers` |
+| Write a literature review or the review section of a proposal | `writing-research-papers` |
+| Read through a batch of papers and build a literature matrix | `paper-deep-reading` + `writing-research-papers` |
 | A reviewer says my writing sounds AI-generated; my AIGC score is too high | `academic-deai-writing` |
 | I just want a ready-made set of paper-writing prompts | [`prompt-library/`](./prompt-library/README.md) (not a Skill — reference material) |
 | Write a grant or research proposal | `grant-proposal-ai` |
@@ -106,8 +106,8 @@ These Skills share three characteristics:
 | Mathematical proofs, derivations, novelty analysis, algorithm experiments | `research-copilot` |
 | I'm a grad student feeling lost: topics, advisor relations, whether to do a PhD | `graduate-research-career` |
 | Write a notice, summary, meeting minutes, or work report | `ai-gongwen-writing` |
-| Understand something myself, or explain it clearly to others: diagrams, an interactive webpage, an explainer video | `explain-clearly` |
-| Write an operations manual / SOP / safety instructions, or check manuscript language quality | `explain-clearly` (controlled language) + `research-copilot` (language check scripts) |
+| Understand something myself, or explain it clearly to others: diagrams, an interactive webpage, an explainer video | `clear-explainer` |
+| Write an operations manual / SOP / safety instructions, or check manuscript language quality | `clear-explainer` (controlled language) + `research-copilot` (language check scripts) |
 | Make a complex decision, analyze a messy situation, find a mental model | `modern-thinking-toolkit` |
 
 ---
@@ -132,7 +132,7 @@ loads the router first, then descends into `skills/` and registers all 12 sub-Sk
 git clone https://github.com/<your-username>/<repo-name>.git
 
 # Copy the Skills you need into your user-level skills directory
-cp -r <repo-name>/skills/research-paper-writing ~/.workbuddy/skills/
+cp -r <repo-name>/skills/writing-research-papers ~/.workbuddy/skills/
 cp -r <repo-name>/skills/paper-deep-reading  ~/.workbuddy/skills/
 # …copy as needed
 ```
@@ -141,11 +141,11 @@ cp -r <repo-name>/skills/paper-deep-reading  ~/.workbuddy/skills/
 
 ```bash
 mkdir -p <your-project>/.workbuddy/skills
-cp -r <repo-name>/skills/research-paper-writing <your-project>/.workbuddy/skills/
+cp -r <repo-name>/skills/writing-research-papers <your-project>/.workbuddy/skills/
 ```
 
 After installing, restart the Agent or reload Skills. They will then trigger automatically in
-conversation, or you can invoke them by name (e.g. "use research-paper-writing to help me draft
+conversation, or you can invoke them by name (e.g. "use writing-research-papers to help me draft
 a literature review").
 
 > Layout convention: `SKILL.md` is the entry point, `references/` holds knowledge fragments,
@@ -169,7 +169,7 @@ a literature review").
 │   ├── README.md                 #   Index, source notes, and usage rules
 │   └── *.md                      #   40 prompt schemes + 30 English writing instructions (verbatim)
 └── skills/                       # Each directory below = one standalone Skill
-    ├── research-paper-writing/
+    ├── writing-research-papers/
     │   ├── SKILL.md              #   Entry point: trigger conditions + workflow
     │   ├── README.md             #   Skill detail page
     │   ├── references/           #   Knowledge fragments (section guides, checklists, examples)
@@ -184,7 +184,7 @@ a literature review").
     ├── graduate-research-career/
     ├── ai-gongwen-writing/
     ├── modern-thinking-toolkit/
-    └── explain-clearly/
+    └── clear-explainer/
 ```
 
 ---
@@ -196,7 +196,7 @@ Each works well alone, but chaining them is far more powerful. A few typical cha
 - **From a pile of papers to a finished review**
   `paper-deep-reading` (read each paper, extract elements, raise critiques)
   → `zettelkasten-notes` (distill into literature cards and build links)
-  → `research-paper-writing` (structure, write, and self-audit the review)
+  → `writing-research-papers` (structure, write, and self-audit the review)
 
 - **From an idea to a grant proposal**
   `research-copilot` (argue the scientific question and method feasibility)
@@ -206,7 +206,7 @@ Each works well alone, but chaining them is far more powerful. A few typical cha
 - **From finishing a book to publishing an article**
   `socratic-reading` (four levels of reading, four core questions)
   → `zettelkasten-notes` (permanent notes)
-  → `research-paper-writing` / `ai-gongwen-writing` (produce the final text)
+  → `writing-research-papers` / `ai-gongwen-writing` (produce the final text)
 
 ---
 
@@ -222,9 +222,9 @@ efficiency.
 
 | Category | Description | Examples |
 |---|---|---|
-| **① Distilled / rewritten** (the bulk) | Restatement and structural reorganization of key methods, not verbatim copying | The flows, rules, and checklists of each Skill; the functional distillation of ASD-STE100 controlled English in `explain-clearly` / `research-copilot` |
-| **② Verbatim quotations** (all sources cited) | Original sentences, prompt templates, or phrase banks kept for authenticity or functionality | The "金句 (Lecture N)" quotes in `modern-thinking-toolkit`; the verbatim prompt sets in `prompt-library/`; the academic phrase bank in `research-paper-writing` |
-| **③ Third-party material under known copyright constraints** | Material whose owners explicitly restrict redistribution; such files carry prominent notices | *Academic Phrasebank* cited in `research-paper-writing` (University of Manchester — personal use only, electronic redistribution prohibited) |
+| **① Distilled / rewritten** (the bulk) | Restatement and structural reorganization of key methods, not verbatim copying | The flows, rules, and checklists of each Skill; the functional distillation of ASD-STE100 controlled English in `clear-explainer` / `research-copilot` |
+| **② Verbatim quotations** (all sources cited) | Original sentences, prompt templates, or phrase banks kept for authenticity or functionality | The "金句 (Lecture N)" quotes in `modern-thinking-toolkit`; the verbatim prompt sets in `prompt-library/`; the academic phrase bank in `writing-research-papers` |
+| **③ Third-party material under known copyright constraints** | Material whose owners explicitly restrict redistribution; such files carry prominent notices | *Academic Phrasebank* cited in `writing-research-papers` (University of Manchester — personal use only, electronic redistribution prohibited) |
 
 ### Citation conventions
 

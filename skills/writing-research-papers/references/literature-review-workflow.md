@@ -1,6 +1,6 @@
 # 文献综述七阶段工作流（中文方法论体系）
 
-> 来源：原 `literature-review` 技能（2026-09-24 并入 research-paper-writing）。
+> 来源：原 `literature-review` 技能（2026-09-24 并入 writing-research-papers）。
 > 综合九部方法论著作与指南：Machi & McEvoy 六步法、Creswell 五步结构、
 > Foss & Walter 六步法、Pautasso 十条规则、Ridley 批判性阅读与综合矩阵、
 > 《文献综述写作指南》《论文白皮书》《论文成长笔记》《硕博论文写作与研究方法全攻略》。

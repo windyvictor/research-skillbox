@@ -38,9 +38,9 @@ Do not answer the user's request from this file alone. This file only picks the 
 
 | When the user asks to… | Load |
 |---|---|
-| Write or revise a paper, thesis, abstract, or one section of it | `skills/research-paper-writing/SKILL.md` |
-| Write a literature review, or the review section of a proposal | `skills/research-paper-writing/SKILL.md` |
-| Read a batch of papers and build a literature matrix | `skills/paper-deep-reading/SKILL.md`, then `skills/research-paper-writing/SKILL.md` |
+| Write or revise a paper, thesis, abstract, or one section of it | `skills/writing-research-papers/SKILL.md` |
+| Write a literature review, or the review section of a proposal | `skills/writing-research-papers/SKILL.md` |
+| Read a batch of papers and build a literature matrix | `skills/paper-deep-reading/SKILL.md`, then `skills/writing-research-papers/SKILL.md` |
 | Strip AI traces / lower an AIGC score on a manuscript | `skills/academic-deai-writing/SKILL.md` |
 | Write a grant or research proposal, section by section | `skills/grant-proposal-ai/SKILL.md` |
 | Set up AI tools and workflows for research efficiency | `skills/ai-research-methodology/SKILL.md` |
@@ -48,15 +48,15 @@ Do not answer the user's request from this file alone. This file only picks the 
 | Prove a theorem, check a derivation, analyze novelty, design an algorithm experiment | `skills/research-copilot/SKILL.md` |
 | Sort out graduate study, topic choice, advisor relations, or a career decision | `skills/graduate-research-career/SKILL.md` |
 | Write a notice, summary, meeting minutes, report, or speech | `skills/ai-gongwen-writing/SKILL.md` |
-| Explain something so the reader understands it — diagnose the blocker, then choose text, diagram, interactive page, or video | `skills/explain-clearly/SKILL.md` |
-| Write an SOP, operations manual, or safety instruction; check manuscript language quality | `skills/explain-clearly/SKILL.md` (controlled language), plus `skills/research-copilot/SKILL.md` (language check scripts) |
+| Explain something so the reader understands it — diagnose the blocker, then choose text, diagram, interactive page, or video | `skills/clear-explainer/SKILL.md` |
+| Write an SOP, operations manual, or safety instruction; check manuscript language quality | `skills/clear-explainer/SKILL.md` (controlled language), plus `skills/research-copilot/SKILL.md` (language check scripts) |
 | Reason through a complex decision or apply a thinking model | `skills/modern-thinking-toolkit/SKILL.md` |
 
 ## The 12 Skills
 
 | Skill | What it covers |
 |---|---|
-| `skills/research-paper-writing/` | End-to-end paper writing and literature reviews: search and screening, critical reading, review drafting, topic and idea, section-by-section writing, pre-submission self-audit, defense |
+| `skills/writing-research-papers/` | End-to-end paper writing and literature reviews: search and screening, critical reading, review drafting, topic and idea, section-by-section writing, pre-submission self-audit, defense |
 | `skills/academic-deai-writing/` | Removing AI writing traces from papers and proposals: diagnosis, rewriting, boilerplate cleanup, word-budget reallocation, section-specific treatment |
 | `skills/grant-proposal-ai/` | Grant and research proposal writing: every section, plus structured prompt templates |
 | `skills/ai-research-methodology/` | Methodology and tool selection for doing research with AI: literature search, topic trends, experiment design, statistical modeling, submission and revision |
@@ -67,22 +67,22 @@ Do not answer the user's request from this file alone. This file only picks the 
 | `skills/graduate-research-career/` | Graduate study and academic career guidance distilled from 20 research guides, with 6 fillable templates |
 | `skills/ai-gongwen-writing/` | Official and workplace writing in Chinese: notices, bulletins, minutes, plans, summaries, reports, speeches, and more |
 | `skills/modern-thinking-toolkit/` | A toolkit of thinking models drawn from eight sources, for complex decisions and messy situations |
-| `skills/explain-clearly/` | Making a reader understand: diagnose the comprehension blocker, align the facts, then pick the medium (controlled writing, diagrams, interactive HTML explainers, explainer video, discardable tools) and verify before delivery; includes the ASD-STE100 Issue 9 implementation |
+| `skills/clear-explainer/` | Making a reader understand: diagnose the comprehension blocker, align the facts, then pick the medium (controlled writing, diagrams, interactive HTML explainers, explainer video, discardable tools) and verify before delivery; includes the ASD-STE100 Issue 9 implementation |
 
 ## Composing Skills
 
 Chain sub-Skills instead of running one pass that tries to do everything.
 
-- **A pile of papers to a finished review** — `paper-deep-reading` → `zettelkasten-notes` → `research-paper-writing`
+- **A pile of papers to a finished review** — `paper-deep-reading` → `zettelkasten-notes` → `writing-research-papers`
 - **An idea to a grant proposal** — `research-copilot` → `grant-proposal-ai` → `academic-deai-writing`
-- **A finished book to a published article** — `socratic-reading` → `zettelkasten-notes` → `research-paper-writing` or `ai-gongwen-writing`
-- **A result to the right medium** — `research-paper-writing` → `explain-clearly` (controlled language, then diagram or interactive page)
+- **A finished book to a published article** — `socratic-reading` → `zettelkasten-notes` → `writing-research-papers` or `ai-gongwen-writing`
+- **A result to the right medium** — `writing-research-papers` → `clear-explainer` (controlled language, then diagram or interactive page)
 
 ## Language note
 
 The 12 sub-Skills are written primarily in **Chinese**, and several are specific to Chinese
 academic and official-document conventions. A sub-Skill's own file governs the language of its
-output. `research-paper-writing`, `research-copilot`, and `explain-clearly` include
+output. `writing-research-papers`, `research-copilot`, and `clear-explainer` include
 English-facing rules as well.
 
 ## License

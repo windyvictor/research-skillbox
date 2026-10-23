@@ -1,5 +1,5 @@
 ---
-name: explain-clearly
+name: clear-explainer
 description: Make a reader understand something — diagnose where the reader is stuck, then pick the output medium that costs the reader the least effort, and verify the result before delivery. Use this skill when explaining, teaching, clarifying, illustrating, or presenting anything, and whenever the content involves structure, process, dynamics, comparison, or spatial and temporal reasoning. Supplies a five-rung escalation ladder (controlled plain-language writing, diagrams and tables, single-file interactive HTML explainer, narrated explainer video, discardable software artifact) with ready templates and scripts for every rung, plus a full implementation of ASD-STE100 Simplified Technical English (Issue 9, all 53 writing rules and the controlled dictionary). Triggers: "帮我看懂", "这个过程画出来", "改变这个条件会怎样", "还是没懂", "explain X", "讲清楚", "讲解一下", "给我看看", "画个图", "做个可视化", "做个讲解网页", "做个讲解视频", "make this clearer", "show me", "visualize this", "explainer", "teach me", "help me understand", "ASD-STE100", "Simplified Technical English", "受控英语", "受控语言", "技术文档写作规范", "检查这段英文有没有违规", "简化这段英文", "写操作手册/维修手册/SOP".
 agent_created: true
 ---

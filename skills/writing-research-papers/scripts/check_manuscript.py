@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""投稿前稿件自检脚本（research-paper-writing skill）
+"""投稿前稿件自检脚本（writing-research-papers skill）
 
 对英文/中英混排的论文稿件（.md / .txt / .tex 纯文本）做确定性机械检查，
 输出 Markdown 报告。检查项提炼自 brittman(200+ 中国学生论文常见习惯)、

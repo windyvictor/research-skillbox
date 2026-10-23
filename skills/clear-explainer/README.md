@@ -1,4 +1,4 @@
-# explain-clearly
+# clear-explainer
 
 > **让读者用最省力的方式看懂** —— 先诊断读者卡在哪里，再选最省力的介质：从受控文字，到图、
 > 交互网页、讲解视频、可丢弃小工具，共五级；附 ASD-STE100 受控英语（Issue 9）的完整实现。
@@ -34,7 +34,7 @@ Part 1 全部 9 节 53 条写作规则 + Part 2 受控词典机制（875 核准�
 ## 内容结构
 
 ```text
-explain-clearly/
+clear-explainer/
 ├── SKILL.md
 ├── README.md
 ├── references/
