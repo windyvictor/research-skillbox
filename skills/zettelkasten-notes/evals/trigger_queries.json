@@ -1,0 +1,26 @@
+{
+  "skill": "zettelkasten-notes",
+  "how_to_run": "每条查询在新会话里跑 3 次，记录本技能是否被加载；should_trigger 的触发率应 ≥ 2/3，should_not_trigger 的误触发率应 ≤ 1/3。",
+  "queries": [
+    {"query": "我记了好几年笔记，但真要写文章时一点也用不上，怎么办？", "should_trigger": true},
+    {"query": "帮我把这段读书摘录改写成一张永久笔记", "should_trigger": true},
+    {"query": "这张卡片合格吗？帮我看看标题和连接", "should_trigger": true},
+    {"query": "卢曼的卡片盒编号是怎么编的？21/3d5a 是什么意思", "should_trigger": true},
+    {"query": "我想用 Obsidian 搭一个双链笔记系统来积累论文素材", "should_trigger": true},
+    {"query": "刚和 AI 讨论出一个很好的结论，怎么沉淀进我的笔记库？", "should_trigger": true},
+    {"query": "让 AI 帮我维护笔记库，哪些事可以交给它，哪些必须我自己做？", "should_trigger": true},
+    {"query": "帮我给我的 Markdown 知识库做一次体检，看看有没有孤立的笔记和断链", "should_trigger": true},
+    {"query": "新读到的研究和我半年前写的一张卡结论相反，旧卡要删掉吗？", "should_trigger": true},
+    {"query": "论文精读导出了十几张卡片，怎么导入我的卡片库？", "should_trigger": true},
+    {"query": "How do I turn my highlights into atomic evergreen notes?", "should_trigger": true},
+    {"query": "我的标签已经 80 多个了，越来越乱，该怎么整理？", "should_trigger": true},
+    {"query": "某个主题攒了 15 张卡，可以开始写文章了吗？", "should_trigger": true},
+    {"query": "帮我精读这篇 arXiv 论文，讲清方法和实验", "should_trigger": false},
+    {"query": "每天早上给我推送这个领域的最新论文", "should_trigger": false},
+    {"query": "在 Notion 里建一个任务看板，跟踪我的项目进度", "should_trigger": false},
+    {"query": "帮我把这份会议记录总结成三条要点", "should_trigger": false},
+    {"query": "推荐几款好用的笔记 App，要支持手写", "should_trigger": false},
+    {"query": "帮我写一份这本书的读后感，800 字", "should_trigger": false},
+    {"query": "把这个 PDF 上传到我的知识库", "should_trigger": false}
+  ]
+}
