@@ -2,13 +2,18 @@
 
 **[English](./README.md) | 中文**
 
-> 11 个独立维护的 AI Agent Skills 导航页，覆盖科研、学术写作、知识管理与职场工作。
+> 一套围绕科研全流程、学术职业发展与通用思维构建的 11 个 AI Agent Skills。
 
-原 `research-skillbox` 合集已于 **2026 年 11 月 3 日**拆分为 11 个独立仓库。每个技能现在独立维护版本历史、中英文 README、适用的测试或评测案例，以及安装入口。
+它们共同覆盖一条完整的实践链路：**读文献 → 想问题 → 做研究 → 写论文 → 报项目 → 建知识库**。此外还包括研究生涯指导、公文与职场写作、清晰解释和通用思维工具。
+
+每个技能都是写给 AI Agent 的可复用专业工作流，明确规定何时触发、需要什么证据、按什么流程执行，以及怎样判断任务完成。目标是把临场拼提示词，变成可追溯、可执行的方法。
 
 ## 状态说明
 
-本仓库中仍然保留的技能文件是**历史快照**，用于保留旧链接、提交历史和 Star，不再同步更新。需要最新版、安装说明、问题反馈或参与修改时，请进入下方对应的独立仓库。
+> [!IMPORTANT]
+> 本仓库是**导航页，不是可安装的技能合集**。旧合集文件已从当前分支移除。最新版、安装说明、问题反馈和参与修改，均以下方 11 个独立仓库为准。旧合集仍可从 Git 历史恢复。
+
+原 `research-skillbox` 合集已于 **2026 年 11 月 3 日**拆分为 11 个独立仓库。每个技能现在独立维护版本历史、中英文 README、适用的测试或评测案例，以及安装入口。
 
 原 `ai-research-methodology` 不再作为独立技能维护；其中有效内容已经分别融入论文阅读、论文写作、基金申请、科研协作和科研生涯技能。
 
@@ -28,6 +33,29 @@
 | [writing-research-papers](https://github.com/windyvictor/writing-research-papers) | 根据可回溯证据撰写和修改论文、综述、投稿材料与审稿回复。 |
 | [zettelkasten-notes](https://github.com/windyvictor/zettelkasten-notes) | 把阅读与思考沉淀为可复用、可连接并能支持长期写作的卡片。 |
 
+## 按使用场景选择技能
+
+| 我想…… | 从这里开始 |
+|---|---|
+| 精读论文、核对方法与证据，或比较多篇论文 | [paper-deep-reading](https://github.com/windyvictor/paper-deep-reading) |
+| 撰写论文、文献综述、投稿材料或审稿回复 | [writing-research-papers](https://github.com/windyvictor/writing-research-papers) |
+| 去掉科研文本的模板化 AI 味，同时保留科学含义 | [academic-deai-writing](https://github.com/windyvictor/academic-deai-writing) |
+| 推导证明、分析研究想法、设计算法实验、查新或复现 | [research-copilot](https://github.com/windyvictor/research-copilot) |
+| 准备基金或课题申请书 | [grant-proposal-ai](https://github.com/windyvictor/grant-proposal-ai) |
+| 把阅读与思考沉淀为长期可用的知识系统 | [zettelkasten-notes](https://github.com/windyvictor/zettelkasten-notes) |
+| 用检视阅读、分析阅读或主题阅读读一本书 | [socratic-reading](https://github.com/windyvictor/socratic-reading) |
+| 处理研究生涯、导师协作、论文发表或学术职业问题 | [graduate-research-career](https://github.com/windyvictor/graduate-research-career) |
+| 把复杂概念、机制或流程讲清楚 | [clear-explainer](https://github.com/windyvictor/clear-explainer) |
+| 撰写公文或职场材料 | [ai-gongwen-writing](https://github.com/windyvictor/ai-gongwen-writing) |
+| 分析复杂决策、系统、博弈或学习问题 | [modern-thinking-toolkit](https://github.com/windyvictor/modern-thinking-toolkit) |
+
+## 典型组合工作流
+
+- **从一批论文到一篇综述：** `paper-deep-reading` → `zettelkasten-notes` → `writing-research-papers`
+- **从研究想法到基金申请：** `research-copilot` → `grant-proposal-ai` → `academic-deai-writing`
+- **从读完一本书到形成写作素材：** `socratic-reading` → `zettelkasten-notes` → `writing-research-papers`
+- **从技术结果到清晰讲解：** `research-copilot` 或 `paper-deep-reading` → `clear-explainer`
+
 ## 应该使用哪个仓库？
 
 - 安装或更新技能：克隆对应的独立仓库。
@@ -40,7 +68,7 @@ git clone https://github.com/windyvictor/paper-deep-reading.git
 
 把 `paper-deep-reading` 换成需要的技能名即可。各仓库 README 中提供具体的安装和使用说明。
 
-感谢访问和 Star。本仓库继续作为公开导航页保留，这颗 Star 也会留在这里；11 个技能将在各自仓库继续更新。
+感谢访问和 Star。本公开导航页保留整套技能的共同身份与历史，11 个技能则在各自仓库继续更新。
 
 ## 许可与历史材料
 
