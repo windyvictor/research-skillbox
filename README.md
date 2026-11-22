@@ -2,7 +2,7 @@
 
 **English | [中文](./README.cn.md)**
 
-> A collection of 11 AI Agent Skills built around the full research workflow, academic career development, and general-purpose thinking.
+> A collection of 12 AI Agent Skills built around the full research workflow, academic career development, and general-purpose thinking.
 
 Together they cover a practical loop: **read papers → think through problems → do research → write papers → apply for funding → build a knowledge base**. The collection also includes graduate-career guidance, Chinese official-document writing, clear explanation, and a general thinking toolkit.
 
@@ -13,7 +13,7 @@ Each Skill is a reusable professional workflow written for an AI Agent. It defin
 > [!IMPORTANT]
 > This repository is a **navigation hub, not an installable Skill bundle**. The old monorepo files have been removed from the current branch. Always use the standalone repositories below for the latest versions, installation instructions, issues, and contributions. The former bundle remains recoverable from Git history.
 
-The original `research-skillbox` monorepo was split into 11 standalone repositories on **November 3, 2026**. Each Skill now has its own release history, bilingual README, tests or evaluation cases where applicable, and installation entry point.
+The original `research-skillbox` monorepo was split into 11 standalone repositories on **November 3, 2026**. [research-blue-team](https://github.com/windyvictor/research-blue-team) was published later, after that split, and is included in the current directory. Each Skill now has its own release history, bilingual README, tests or evaluation cases where applicable, and installation entry point.
 
 The former `ai-research-methodology` Skill is no longer maintained as a separate entry point. Its useful material has been integrated into the relevant reading, writing, grant, research, and career Skills.
 
@@ -28,6 +28,7 @@ The former `ai-research-methodology` Skill is no longer maintained as a separate
 | [grant-proposal-ai](https://github.com/windyvictor/grant-proposal-ai) | Plan and write evidence-grounded grant proposals under current program requirements. |
 | [modern-thinking-toolkit](https://github.com/windyvictor/modern-thinking-toolkit) | Apply a small set of suitable models to complex decisions, systems, games, learning, and critical thinking. |
 | [paper-deep-reading](https://github.com/windyvictor/paper-deep-reading) | Read and critically analyse academic papers with explicit source and evidence boundaries. |
+| [research-blue-team](https://github.com/windyvictor/research-blue-team) | Challenge the claims that decide the work — an idea, an experiment, a proof, a paper, a grant — and calibrate every objection by whether it would change a decision. |
 | [research-copilot](https://github.com/windyvictor/research-copilot) | Collaborate rigorously on proofs, research design, algorithms, experiments, novelty, and reproducibility. |
 | [socratic-reading](https://github.com/windyvictor/socratic-reading) | Use Socratic questioning and analytical reading for books and long-form materials. |
 | [writing-research-papers](https://github.com/windyvictor/writing-research-papers) | Write and revise research papers, literature reviews, submissions, and reviewer responses from traceable evidence. |
@@ -41,6 +42,7 @@ The former `ai-research-methodology` Skill is no longer maintained as a separate
 | Write a paper, literature review, submission, or reviewer response | [writing-research-papers](https://github.com/windyvictor/writing-research-papers) |
 | Remove formulaic AI-style prose without changing scientific meaning | [academic-deai-writing](https://github.com/windyvictor/academic-deai-writing) |
 | Work on a proof, research idea, algorithm, experiment, novelty claim, or reproduction | [research-copilot](https://github.com/windyvictor/research-copilot) |
+| Challenge the deciding claims in an idea, experiment, proof, paper, or grant | [research-blue-team](https://github.com/windyvictor/research-blue-team) |
 | Prepare a grant or project proposal | [grant-proposal-ai](https://github.com/windyvictor/grant-proposal-ai) |
 | Turn reading and ideas into a durable knowledge system | [zettelkasten-notes](https://github.com/windyvictor/zettelkasten-notes) |
 | Read a book through inspectional, analytical, or syntopical reading | [socratic-reading](https://github.com/windyvictor/socratic-reading) |
@@ -52,9 +54,10 @@ The former `ai-research-methodology` Skill is no longer maintained as a separate
 ## Example workflows
 
 - **From papers to a literature review:** `paper-deep-reading` → `zettelkasten-notes` → `writing-research-papers`
-- **From a research idea to a grant proposal:** `research-copilot` → `grant-proposal-ai` → `academic-deai-writing`
+- **From a research idea to a grant proposal:** `research-copilot` → `research-blue-team` → `grant-proposal-ai` → `academic-deai-writing`
 - **From a book to reusable writing material:** `socratic-reading` → `zettelkasten-notes` → `writing-research-papers`
 - **From a technical result to a clear presentation:** `research-copilot` or `paper-deep-reading` → `clear-explainer`
+- **Before standing by a paper or grant claim:** `writing-research-papers` or `grant-proposal-ai` → `research-blue-team`
 
 ## Which repository should I use?
 
@@ -68,7 +71,7 @@ git clone https://github.com/windyvictor/paper-deep-reading.git
 
 Replace `paper-deep-reading` with the Skill you need. See each repository's README for platform-specific installation and usage.
 
-Thank you for visiting and starring this project. This public hub preserves the collection's identity and history while the 11 Skills continue to evolve independently.
+Thank you for visiting and starring this project. This public hub preserves the collection's identity and history while the 12 Skills continue to evolve independently.
 
 ## License and historical material
 
